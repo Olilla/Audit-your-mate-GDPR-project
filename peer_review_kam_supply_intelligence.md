@@ -264,27 +264,5 @@ The controller (the organisation deploying the agent), with execution handled by
 
 
 **Written together with Dilia after the debrief, May 2026.**
-### Joint Closing Note
-### Where both audits agree
-
-| Finding | Why both audits reached the same conclusion |
-|---|---|
-| No DPAs with any external processor | Four US-based vendors handle personal data on every session; the absence of Art. 28 agreements is structurally unavoidable regardless of perspective |
-| No Chapter V transfer mechanism | All processors are US-based; EEA-to-US transfers are inherent to the architecture |
-| DPIA mandatory and not initiated | System meets at least three EDPB criteria; both audits applied the same threshold |
-| No internal privacy notice for employees | Both audits identified this as a prerequisite for legitimate interests to hold, not a downstream obligation |
-| Overall verdict: proceed with conditions | Internal tool, no autonomous decisions affecting individuals, bounded data scope — both audits weighted these mitigating factors consistently |
-
-### Where they diverge
-
-| Finding | Self-audit | External review | Why they differ |
-|---|---|---|---|
-| Slack in the role map | Listed in accountability table, not escalated | Standalone Significant finding | External auditor had no prior familiarity with Slack as a workflow component and evaluated it on equal terms with other processors |
-| XLSX export retention | Noted as a documentation gap | Standalone Significant finding requiring immediate action | Same reason — builder treated it as a known limitation rather than a compliance risk |
-| Betriebsrat / §87 BetrVG | Raised as a residual risk | Not identified | Domain knowledge the builder has that is invisible to an auditor working only from the brief |
-| Remediation specificity | Concrete technical fixes: Bearer token auth already in codebase, OpenAI ZDR mode, secrets manager migration | Gap identified, no technical detail | Builder knows the stack; external auditor does not |
-| Partial LIA analysis | Drafted, with specific elements flagged for legal review | Identified absence of lawful basis as Blocking, no LIA attempt | Builder had enough context to start the analysis; external auditor could only flag the absence |
-
-### What this comparison reveals
-
-The self-audit was stronger at remediation; the external review was stronger at gap prioritisation and role mapping. The Slack omission is the clearest illustration of the core dynamic: components that feel like standard infrastructure become invisible as compliance relationships to the builder. An external auditor has no such familiarity and therefore applies the same scrutiny to every processor regardless of how embedded it feels in the workflow.
+### Where both our audits agree
+The hardest gaps to catch in your own work are the ones hidden inside familiarity, processors that feel like standard infrastructure rather than compliance relationships, and retention practices that feel like known limitations rather than legal risks. That same closeness that gives a self-assessor richer technical detail is precisely what makes certain compliance relationships invisible.
